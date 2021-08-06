@@ -75,6 +75,8 @@ func main() {
 				commandNew += " -sh ''User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 LZD_YWH_BBP_PUBLIC''"
 			} else if strings.Contains(path, "hilton") {
 				commandNew += " -sh ''User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 HackerOne''"
+			} else if strings.Contains(path, "upwork") {
+				commandNew += " -sh ''User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 bugcrowd''"
 			}
 
 			fmt.Printf("started %d: %s\n", started, commandNew)
